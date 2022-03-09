@@ -1,12 +1,11 @@
 # MISIÓN IMPOSIBLE APROBAR 4
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+En este juego, un jugador tratará de escapar mediante acertijos y pruebas impuestas a lo largo del mismo.
 
 ## Integrantes del equipo
 
- Álvaro López-Hermida Martínez    - Alopez-hermida.
- 
+Marco Gapar (Marpiki11), Alejandro Montero Porras (Alejandro-Montero-Porras), Alvaro lopez-Hermida (Alopez-hermida), Jesús Marín Delgado (jesuppedia).
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+Aprender a programar en c y conocer la programación desde un punto de vista práctico enfocado en el desarrollo de proyectos.
