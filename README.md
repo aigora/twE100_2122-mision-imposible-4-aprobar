@@ -4,10 +4,10 @@ En este juego, un jugador tratará de escapar mediante acertijos y pruebas impue
 
 ## Integrantes del equipo
 
-###Marco Gapar (Marpiki11)
-###Alejandro Montero Porras (Alejandro-Montero-Porras)
-###Álvaro López-Hermida (Alopez-hermida)
-###Jesús Marín Delgado (jesuppedia)
+### Marco Gapar (Marpiki11)
+### Alejandro Montero Porras (Alejandro-Montero-Porras)
+### Álvaro López-Hermida (Alopez-hermida)
+### Jesús Marín Delgado (jesuppedia)
 
 
 ## Objetivos del trabajo
