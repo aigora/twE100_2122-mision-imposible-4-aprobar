@@ -1,10 +1,13 @@
 # MISIÓN IMPOSIBLE APROBAR 4
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+ [Descripción del escaperoom]
 
 ## Integrantes del equipo
 
- Álvaro López-Hermida Martínez    - Alopez-hermida.
+ Álvaro López-Hermida Martínez    - Alopez-hermida
+ Marco Gaspar Martín              - Marpiki11
+ Jesus Marín Delgado              - jesuppedia
+ Alejandro Montero Porras         - Alejandro-Montero-Porras
  
 
 ## Objetivos del trabajo
