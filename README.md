@@ -1,15 +1,15 @@
 # MISIÓN IMPOSIBLE APROBAR 4
 
- [Descripción del escaperoom]
+En este juego, un jugador tratará de escapar mediante acertijos y pruebas impuestas a lo largo del mismo.
 
 ## Integrantes del equipo
 
- Álvaro López-Hermida Martínez    - Alopez-hermida
- Marco Gaspar Martín              - Marpiki11
- Jesus Marín Delgado              - jesuppedia
- Alejandro Montero Porras         - Alejandro-Montero-Porras
- 
+ Marco Gapar (Marpiki11) 
+ Alejandro Montero Porras (Alejandro-Montero-Porras) 
+ Álvaro López-Hermida (Alopez-hermida) 
+ Jesús Marín Delgado (jesuppedia).
+
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+Aprender a programar en c y conocer la programación desde un punto de vista práctico enfocado en el desarrollo de proyectos.
