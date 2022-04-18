@@ -42,6 +42,7 @@ int main(){
 
 
 
+
 	printf("\nAhora, seleccione la dificultad en la que quieres jugar:\n");
 	printf("1) Facil\n2) Dificil\n");
 	scanf("%d",&niveldif);
@@ -49,13 +50,13 @@ int main(){
 		case 1:
 			printf("\nHas seleccionado nivel fácil\n");
 			continuar();
-			
-			
+
+
 		break;
 		case 2:
 			printf("\nHas seleccionado nivel dificil\n");
 			continuar();
-			
+
 		break;
 
 	}
