@@ -1,16 +1,20 @@
 #include <stdio.h>
 #include <locale.h>
 void continuar();
+void nivel_dificil();
+void nivel_facil();
+
 int main(){
 	setlocale (LC_CTYPE,"spanish");
 	int niveldif;
 	char apodo[10];
 	char aux;
+	int eleccion;
 	FILE *f1;
 	FILE *f2;
 	f1 = fopen("normascaperoom.txt","r");
 	f2 = fopen("nombreypuntuaciones.txt","w");
-	do{
+
 	printf("Bienvenido a nuestro scaperoom (presione enter para continuar)\n");
 	continuar();
 
@@ -41,28 +45,39 @@ int main(){
     fclose(f2);
 
 
+	do
+    {
+        printf("--MENU PRINCIPAL--\n");
+        printf("1) Modo dificil.\n2) Modo facil\n3)Salir del programa.\n");
+        scanf("%i", &eleccion);
+        switch(eleccion)
+        {
+            case 1:
+                nivel_dificil();
+                break;
+            case 2:
+                nivel_facil();
+                break;
+            case 3:
+                break;
+            default:
+                break;
+
+        }
+    }while (eleccion != 3);
 
 
-	printf("\nAhora, seleccione la dificultad en la que quieres jugar:\n");
-	printf("1) Facil\n2) Dificil\n");
-	scanf("%d",&niveldif);
-	switch (niveldif){
-		case 1:
-			printf("\nHas seleccionado nivel fácil\n");
-			continuar();
 
-
-		break;
-		case 2:
-			printf("\nHas seleccionado nivel dificil\n");
-			continuar();
-
-		break;
-
-	}
-
-	}while (niveldif!=1 && niveldif!=2);
 	return 0;
+}
+
+void nivel_dificil()
+{
+    printf("Ha elegido el modo dificil.\n");
+}
+void nivel_facil()
+{
+    printf("Ha elegido modo facil.\n");
 }
 
 void continuar(){
