@@ -21,6 +21,7 @@ int main(){
         aux = fgetc(f1);
         printf("%c",aux);
     }
+    fclose(f1);
 
 	Continuar();
 	printf("Escriba el numero de jugadores\n");
