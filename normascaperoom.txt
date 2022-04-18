@@ -1,9 +1,9 @@
 
-Tu objetivo es escapar de la habitación en la que te encuentras.
+Tu objetivo es escapar de la habitacion en la que te encuentras.
 
-Si fallas en alguna de las pruebas volverás al inicio mientras que si aciertas, avanzarás a la siguiente prueba.
+Si fallas en alguna de las pruebas volveras al inicio mientras que si aciertas, avanzaras a la siguiente prueba.
 
-Deberás superar tres pruebas antes de poder escapar.
+Deberas superar tres pruebas antes de poder escapar.
 
 Buena suerte escapando, puede que la necesites.
 
