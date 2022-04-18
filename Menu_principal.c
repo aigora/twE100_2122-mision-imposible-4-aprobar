@@ -1,7 +1,8 @@
 #include <stdio.h>
-
+#include <locale.h>
 void continuar();
 int main(){
+	setlocale (LC_CTYPE,"spanish");
 	int niveldif;
 	char apodo[10];
 	char aux;
@@ -46,7 +47,7 @@ int main(){
 	scanf("%d",&niveldif);
 	switch (niveldif){
 		case 1:
-			printf("\nHas seleccionado nivel facil\n");
+			printf("\nHas seleccionado nivel fácil\n");
 			continuar();
 			
 			
