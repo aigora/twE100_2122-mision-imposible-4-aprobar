@@ -6,4 +6,3 @@ Si fallas en alguna de las pruebas volverás al inicio mientras que si aciertas,
 Deberás superar tres pruebas antes de poder escapar.
 
 Buena suerte escapando, puede que la necesites.
-
