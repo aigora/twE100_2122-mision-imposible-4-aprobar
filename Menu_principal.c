@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void Continuar();
+void continuar();
 int main(){
 	int niveldif;
 	char apodo[10];
@@ -11,7 +11,7 @@ int main(){
 	f2 = fopen("nombreypuntuaciones.txt","w");
 	do{
 	printf("Bienvenido a nuestro scaperoom (presione enter para continuar)\n");
-	Continuar();
+	continuar();
 
 	printf("Para empezar necesitas saber que es un scaperoom (presione enter para continuar)\n");
 	if(f1 == NULL)
@@ -26,7 +26,7 @@ int main(){
     }
     fclose(f1);
 
-	Continuar();
+	continuar();
 
 
 	printf("Escriba el nombre del jugador (maximo 10 letras)\n");
@@ -47,9 +47,14 @@ int main(){
 	switch (niveldif){
 		case 1:
 			printf("\nHas seleccionado nivel facil\n");
+			continuar();
+			
+			
 		break;
 		case 2:
 			printf("\nHas seleccionado nivel dificil\n");
+			continuar();
+			
 		break;
 
 	}
@@ -58,7 +63,7 @@ int main(){
 	return 0;
 }
 
-void Continuar(){
+void continuar(){
 	char enter;
 	getchar();
 }
