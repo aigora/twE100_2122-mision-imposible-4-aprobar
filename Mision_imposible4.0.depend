@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1650465625 source:c:\users\marco\desktop\mision_imposible4.0\juegos.c
+
+1650465382 source:c:\users\marco\desktop\mision_imposible4.0\menu_principal.c
+	<stdio.h>
+	<locale.h>
+	"juegos.h"
+
+1650465611 c:\users\marco\desktop\mision_imposible4.0\juegos.h
+

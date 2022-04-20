@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
+#include "juegos.h"
+
 void continuar();
 void nivel_dificil();
 void nivel_facil();
