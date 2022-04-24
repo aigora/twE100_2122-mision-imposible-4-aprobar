@@ -1,9 +1,14 @@
 #include <string.h>
 #include <stdio.h>
 
+void nivel_dificil();
+void nivel_facil();
+
 void wordle();
 void ahorcado();
 void tres_en_raya();
+void continuar();
+void trivia_facil ();
 
 
 //FUNCIONES DEL AHORCADO

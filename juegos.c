@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 
+
+void nivel_dificil()
+{
+    printf("Ha elegido el modo dificil.\n");
+}
+void nivel_facil()
+{
+    printf("Ha elegido modo facil.\n");
+}
+
 ///AQUI EMPIEZA EL JUEGO DEL AHORCADO///
 void ahorcado()
 {
@@ -113,6 +123,48 @@ void print_cadena(char cadena[])
         i++;
     }
     printf("\n");
+}
+
+
+void continuar()
+{
+	char enter;
+	getchar();
+}
+
+void trivia_facil ()
+{
+    int a,b,c,d,punt;
+
+    printf("Bienvenido a la prueba final\n\n");
+    printf("Vas a tener que responder a varias preguntas\n\n");
+    printf("De 4 temas: Historia, Geografia, Arte y Cultura general(Presione enter para continuar)\n\n");
+
+    continuar();
+
+    printf("Primera pregunta:\n");
+    printf("Opciones:\n 1)\n 2)\n 3)\n\n");
+    scanf("%i",&a);
+    printf("Segunda pregunta:\n");
+    printf("Opciones:\n 1)\n 2)\n 3)\n\n");
+    scanf("%i",&b);
+    printf("Tercera pregunta:\n");
+    printf("Opciones:\n 1)\n 2)\n 3)\n\n");
+    scanf("%i",&c);
+    printf("Cuarta pregunta:\n");
+    printf("Opciones:\n 1)\n 2)\n 3)\n\n");
+    scanf("%i",&d);
+
+
+    if(a==1&&b==3&&c==2&&d==3)
+    {
+        printf("Enhorabuena, has acertado todas las preguntas\n\n Escapaste de la habitacion\n\n puedes ver tus resultados antes de salir\n\n");
+
+        //fuera de esta funcion poner la opcion de ver el fichero puntuaciones
+
+    }
+    else printf("Error, no conseguiste salir de la habitacion y has muerto de inanicion, vuelvalo a intentar\n");
+
 }
 
 

@@ -2,9 +2,6 @@
 #include <locale.h>
 #include "juegos.h"
 
-void continuar();
-void nivel_dificil();
-void nivel_facil();
 
 int main(){
 	setlocale (LC_CTYPE,"spanish");
@@ -72,16 +69,6 @@ int main(){
 	return 0;
 }
 
-void nivel_dificil()
-{
-    printf("Ha elegido el modo dificil.\n");
-}
-void nivel_facil()
-{
-    printf("Ha elegido modo facil.\n");
-}
 
-void continuar(){
-	char enter;
-	getchar();
-}
+
+
