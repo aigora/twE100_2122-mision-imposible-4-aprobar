@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
+#include <stdlib.h>
+
 
 
 void nivel_dificil()
@@ -169,3 +172,57 @@ void trivia_facil ()
 
 
 
+
+				                                  // Puebas de buscar//
+
+void buscarcajas ()
+{
+    int n, a;
+    srand(time(NULL));
+    n = rand() % 50 + 1;
+
+ if (n<=6)
+  {
+    printf ("la llave esta en las cajas\n");
+    printf ("¿Quieres cogerla?\n");
+    printf ("Y/N\n");
+    scanf ("%c", &a);
+
+    if (a==89 || a==121)
+            {
+
+        printf ("has conseguido la llave\n");
+            };
+  } else printf ("no hay nada en las cajas\n");
+
+
+}
+
+void buscarestanteria ()
+{
+    int n, a, b;
+
+    srand(time(NULL));
+    n = rand() % 10 + 1;
+
+ if (n<=5)
+ {
+    printf ("la llave esta en la estanteria\n");
+    printf ("¿Quieres cogerla?\n");
+    printf ("Y/N\n");
+    scanf ("%c", &a);
+    if (a==89 || a==121)
+      {
+
+            srand(time(NULL));
+            b = rand() % 10 + 1;
+            if (b>=5)
+            {
+                printf ("Te has caido de la estanteria y has muerto\n");
+                printf ("GAME OVER\n");
+            }  else printf ("has conseguido la llave\n");
+      }
+
+ } else printf ("no hay nada en la estanteria\n");
+
+}
