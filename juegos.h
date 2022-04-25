@@ -20,4 +20,5 @@ void buscarestanteria ();
 //FUNCIONES DEL AHORCADO
 
 void print_cadena(char cadena[]);  //imprime una cadena
+void imprimir_vidas(int vidas); //imprime los corazones de las vidas
 

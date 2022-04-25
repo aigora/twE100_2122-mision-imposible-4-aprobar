@@ -5,14 +5,7 @@
 
 
 
-void nivel_dificil()
-{
-    printf("Ha elegido el modo dificil.\n");
-}
-void nivel_facil()
-{
-    printf("Ha elegido modo facil.\n");
-}
+
 
 ///AQUI EMPIEZA EL JUEGO DEL AHORCADO///
 void ahorcado()
@@ -40,10 +33,10 @@ void ahorcado()
     do
     {
         print_cadena(jugador);
-
-        printf("Numero de vidas: %i\n", vidas);
+        printf("Numero de vidas:");
+        imprimir_vidas(vidas);
         printf("Elija adivinar letra o palabra entera.\n");
-        printf("1)letra\n2)Palabra\n");
+        printf("1)Letra\n2)Palabra\n");
         scanf("%i", &eleccion_jug);
 
         switch (eleccion_jug)
@@ -89,6 +82,13 @@ void ahorcado()
         case 2:
             printf("Escriba la palabra:\n");
             scanf(" %39[^\n]",palabra_entera);
+            if (strcmp(palabra_entera, frase_secreta) != 0)
+            {
+                vidas--;
+                printf("Esa no era la palabra.\n");
+            }
+
+
             break;
         }
 
@@ -114,6 +114,17 @@ void ahorcado()
 }
 
 
+void imprimir_vidas(int vidas)
+{
+    int i;
+    printf("(%i) ", vidas);
+    for (i = 0; i < vidas; i++)
+    {
+        printf("%c ", 3);
+    }
+    printf("\n");
+}
+
 
 
 
@@ -128,12 +139,6 @@ void print_cadena(char cadena[])
     printf("\n");
 }
 
-
-void continuar()
-{
-	char enter;
-	getchar();
-}
 
 void trivia_facil ()
 {

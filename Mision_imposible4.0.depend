@@ -8,16 +8,20 @@
 
 1650465611 c:\users\marco\desktop\mision_imposible4.0\juegos.h
 
-1650764947 source:c:\users\marco\documents\github\twe100_2122-mision-imposible-4-aprobar\menu_principal.c
+1650905223 source:c:\users\marco\documents\github\twe100_2122-mision-imposible-4-aprobar\menu_principal.c
 	<stdio.h>
 	<locale.h>
 	"juegos.h"
 
-1650765784 c:\users\marco\documents\github\twe100_2122-mision-imposible-4-aprobar\juegos.h
+1650905179 c:\users\marco\documents\github\twe100_2122-mision-imposible-4-aprobar\juegos.h
 	<string.h>
 	<stdio.h>
+	<time.h>
+	<stdlib.h>
 
-1650765178 source:c:\users\marco\documents\github\twe100_2122-mision-imposible-4-aprobar\juegos.c
+1650905179 source:c:\users\marco\documents\github\twe100_2122-mision-imposible-4-aprobar\juegos.c
 	<stdio.h>
 	<string.h>
+	<time.h>
+	<stdlib.h>
 
