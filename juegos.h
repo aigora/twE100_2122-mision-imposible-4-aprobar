@@ -13,6 +13,7 @@ void ahorcado();
 void tres_en_raya();
 void continuar();
 void trivia_facil ();
+void trivia_dificil ();
 void buscarcajas ();
 void buscarestanteria ();
 

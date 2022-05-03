@@ -142,7 +142,7 @@ void print_cadena(char cadena[])
                           //TRIVIA//
 void trivia_facil ()
 {
-    int a,b,c,d,puntuatrivia=0;
+    int a,b,c,d,puntuatriviaf=0;
 
     printf("Bienvenido a la prueba final\n\n");
     printf("Vas a tener que responder a varias preguntas para poder escapar finalmente\n\n");
@@ -167,13 +167,47 @@ void trivia_facil ()
     if(a==1&&b==3&&c==2&&d==3)
     {
         printf("Enhorabuena, has acertado todas las preguntas\n\n Escapaste de la habitacion\n\n puedes ver tus resultados antes de salir\n\n");
-        puntuatrivia = 4;
+        puntuatriviaf = 4;
 
         //fuera de esta funcion poner la opcion de ver el fichero puntuaciones
 
     }
     else printf("Error, no conseguiste salir de la habitacion y has muerto de inanicion, vuelvalo a intentar\n");
 
+}
+void trivia_dificil ()
+{
+    int a,b,c,d,puntuatriviad=0;
+
+    printf("Bienvenido a la prueba final\n\n");
+    printf("Vas a tener que responder a varias preguntas para poder escapar finalmente\n\n");
+    printf("De 4 temas: Historia, Geografia, Arte y Cultura general(Presione enter para continuar)\n\n");
+
+    continuar();
+
+    printf("Primera pregunta: ¿Que instrumento invento a mediados del sigo XX frank nakamara tras no llevar suficiente dinero para pagar una cena?\n");
+    printf("Opciones:\n 1)Tarjeta de credito\n 2)Cartera\n 3)Los billetes\n\n");
+    scanf("%i",&a);
+    printf("Segunda pregunta: ¿Cuantos paises sin litoral hay en sudamerica?\n");
+    printf("Opciones:\n 1)Uno\n 2)Tres\n 3)Dos\n\n");
+    scanf("%i",&b);
+    printf("Tercera pregunta: ¿Que querido actor fallecido en el 2014 por suicidio bromeaba diciendo, nunca pelees con alguien feo, no tiene nada que perder?\n");
+    printf("Opciones:\n 1)Elton john\n 2)Robin williams\n 3)Conrad winter\n\n");
+    scanf("%i",&c);
+    printf("Cuarta pregunta: ¿En que mes se obersvan las perseidas?\n");
+    printf("Opciones:\n 1)Enero\n 2)Octubre\n 3)Agosto\n\n");
+    scanf("%i",&d);
+
+
+    if(a==1&&b==3&&c==2&&d==3)
+    {
+        printf("Enhorabuena, has acertado todas las preguntas\n\n Escapaste de la habitacion\n\n puedes ver tus resultados antes de salir\n\n");
+        puntuatriviad = 4;
+
+        //fuera de esta funcion poner la opcion de ver el fichero puntuaciones
+
+    }
+    else printf("Error, no conseguiste salir de la habitacion y has muerto de inanicion, vuelvalo a intentar\n");
 }
 
 
