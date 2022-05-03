@@ -139,34 +139,35 @@ void print_cadena(char cadena[])
     printf("\n");
 }
 
-
+                          //TRIVIA//
 void trivia_facil ()
 {
-    int a,b,c,d,punt;
+    int a,b,c,d,puntuatrivia=0;
 
     printf("Bienvenido a la prueba final\n\n");
-    printf("Vas a tener que responder a varias preguntas\n\n");
+    printf("Vas a tener que responder a varias preguntas para poder escapar finalmente\n\n");
     printf("De 4 temas: Historia, Geografia, Arte y Cultura general(Presione enter para continuar)\n\n");
 
     continuar();
 
-    printf("Primera pregunta:\n");
-    printf("Opciones:\n 1)\n 2)\n 3)\n\n");
+    printf("Primera pregunta: ¿Como se llamaba el monje polaco que fue la primera persona en afirmar que la tierra se movia?\n");
+    printf("Opciones:\n 1)Nicolas Copernico\n 2)Galileo\n 3)Schrodinger\n\n");
     scanf("%i",&a);
-    printf("Segunda pregunta:\n");
-    printf("Opciones:\n 1)\n 2)\n 3)\n\n");
+    printf("Segunda pregunta: ¿Como se llama el tradicional caldo japones hecho con soja fermentada?\n");
+    printf("Opciones:\n 1)Ramen\n 2)Sopa de soja\n 3)Miso\n\n");
     scanf("%i",&b);
-    printf("Tercera pregunta:\n");
-    printf("Opciones:\n 1)\n 2)\n 3)\n\n");
+    printf("Tercera pregunta: ¿Que antigua losa egipcia, que muestra tres tipos de escritura, ha sido clave para descifrar los jeroglificos?\n");
+    printf("Opciones:\n 1)Tabula rasa\n 2)Piedra rosetta\n 3)Piedra filosofal\n\n");
     scanf("%i",&c);
-    printf("Cuarta pregunta:\n");
-    printf("Opciones:\n 1)\n 2)\n 3)\n\n");
+    printf("Cuarta pregunta: ¿Que instrumento, utilizado normalmente para conducir el ganado, es capaz de romper la barrera del sonido?\n");
+    printf("Opciones:\n 1)Vara\n 2)Pastor electrico\n 3)Latigo\n\n");
     scanf("%i",&d);
 
 
     if(a==1&&b==3&&c==2&&d==3)
     {
         printf("Enhorabuena, has acertado todas las preguntas\n\n Escapaste de la habitacion\n\n puedes ver tus resultados antes de salir\n\n");
+        puntuatrivia = 4;
 
         //fuera de esta funcion poner la opcion de ver el fichero puntuaciones
 

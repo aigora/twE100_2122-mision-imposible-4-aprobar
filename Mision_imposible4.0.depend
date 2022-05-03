@@ -31,3 +31,14 @@
 	<time.h>
 	<stdlib.h>
 
+1651589005 source:c:\users\mlafi\documents\github\menu_principal.c
+	<stdio.h>
+	<locale.h>
+	"juegos.h"
+
+1651588108 c:\users\mlafi\documents\github\juegos.h
+	<string.h>
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+
