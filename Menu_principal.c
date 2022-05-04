@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <locale.h>
 #include "juegos.h"
 
 void continuar();
@@ -15,14 +14,20 @@ typedef struct
 
 
 int main(){
-	setlocale (LC_CTYPE,"spanish");
+
+    //variables
+
 	jugador j1 = {"nombre",0};
 	char aux;
 	int eleccion;
+	int puntuaciontotal;
 	FILE *f1;
 	FILE *f2;
 	f1 = fopen("normascaperoom.txt","r");
 	f2 = fopen("nombreypuntuaciones.txt","w");
+
+	//Comienza el programa
+
 
 	printf("Bienvenido a nuestro scaperoom (presione enter para continuar)\n");
 	continuar();
@@ -43,13 +48,15 @@ int main(){
 	continuar();
 
 
-	printf("E,scriba el nombre del jugador (maximo 10 letras)\n");
+	printf("Escriba el nombre del jugador (maximo 10 letras)\n");
 	scanf("%s",&j1.apodo);
 
 
     fprintf(f2,"%s",j1.apodo);
     fprintf(f2,"%i",j1.puntuacion);
     fclose(f2);
+
+    //bucle menu
 
 
 	do
