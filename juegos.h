@@ -5,17 +5,17 @@
 
 
 void nivel_dificil();
-void nivel_facil();
+int nivel_facil();
 
 
-void wordle();
-void ahorcado();
-void tres_en_raya();
+void wordle(int *p_puntuacion);
+void ahorcado(int *p_puntuacion);
+void tres_en_raya(int *p_puntuacion);
 void continuar();
-void trivia_facil ();
-void trivia_dificil ();
-void buscarcajas ();
-void buscarestanteria ();
+int trivia_facil ();
+int trivia_dificil ();
+void buscarcajas (int *p_puntuacion);
+void buscarestanteria (int *p_puntuacion);
 
 
 //FUNCIONES DEL AHORCADO

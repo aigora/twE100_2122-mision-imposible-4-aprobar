@@ -8,7 +8,7 @@
 
 
 ///AQUI EMPIEZA EL JUEGO DEL AHORCADO///
-void ahorcado()
+void ahorcado(int *p_puntuacion)
 {
     int vidas = 10;
     char frase_secreta[] = "paternidad";        //frase o palabra que adivinar
@@ -140,9 +140,9 @@ void print_cadena(char cadena[])
 }
 
                           //TRIVIA//
-void trivia_facil ()
+int trivia_facil ()
 {
-    int a,b,c,d,puntuatriviaf=0;
+    int a,b,c,d;
 
     printf("Bienvenido a la prueba final\n\n");
     printf("Vas a tener que responder a varias preguntas para poder escapar finalmente\n\n");
@@ -167,17 +167,19 @@ void trivia_facil ()
     if(a==1&&b==3&&c==2&&d==3)
     {
         printf("Enhorabuena, has acertado todas las preguntas\n\n Escapaste de la habitacion\n\n puedes ver tus resultados antes de salir\n\n");
-        puntuatriviaf = 4;
+        return 4;
 
         //fuera de esta funcion poner la opcion de ver el fichero puntuaciones
 
     }
     else printf("Error, no conseguiste salir de la habitacion y has muerto de inanicion, vuelvalo a intentar\n");
 
+    return 0;
+
 }
-void trivia_dificil ()
+int trivia_dificil ()
 {
-    int a,b,c,d,puntuatriviad=0;
+    int a,b,c,d;
 
     printf("Bienvenido a la prueba final\n\n");
     printf("Vas a tener que responder a varias preguntas para poder escapar finalmente\n\n");
@@ -202,12 +204,13 @@ void trivia_dificil ()
     if(a==1&&b==3&&c==2&&d==3)
     {
         printf("Enhorabuena, has acertado todas las preguntas\n\n Escapaste de la habitacion\n\n puedes ver tus resultados antes de salir\n\n");
-        puntuatriviad = 4;
+        return 4;
 
         //fuera de esta funcion poner la opcion de ver el fichero puntuaciones
 
     }
     else printf("Error, no conseguiste salir de la habitacion y has muerto de inanicion, vuelvalo a intentar\n");
+    return 0;
 }
 
 
@@ -215,9 +218,10 @@ void trivia_dificil ()
 
 				                                  // Puebas de buscar//
 
-void buscarcajas ()
+void buscarcajas (int *p_puntuacion)
 {
     int n, a;
+
     srand(time(NULL));
     n = rand() % 50 + 1;
 
@@ -232,6 +236,7 @@ void buscarcajas ()
             {
 
         printf ("has conseguido la llave\n");
+        *p_puntuacion += 5;
             };
   } else printf ("no hay nada en las cajas\n");
 

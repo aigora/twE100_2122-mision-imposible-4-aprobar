@@ -1,10 +1,12 @@
 
 Tu objetivo es escapar de la habitacion en la que te encuentras realizando algunas decisiones y pruebas/
 
-Si fallas en alguna de las pruebas volveras al inicio mientras que si aciertas, avanzaras a la siguiente habitacion/
+Deberas superar un numero de pruebas antes de poder escapar/
 
-Deberas superar un numero de habitaciones antes de poder escapar/
+Si fallas alguna volveras a la habitacion para volver a intentarlo/
 
-Cuando superes estas habitaciones deberas superar el nivel final/
+Cuando superes estas pruebas deberas superar la prueba final/
 
-Buena suerte escapando, la vas a necesitar/(pulse intro para continuar)
+Si se falla esta prueba final se acaba el juego/
+
+Buena suerte escapando, la vas a necesitar (pulse intro para continuar)/

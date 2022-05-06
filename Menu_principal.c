@@ -2,8 +2,6 @@
 #include "juegos.h"
 
 void continuar();
-void nivel_dificil();
-void nivel_facil();
 
 typedef struct
 {
@@ -19,8 +17,7 @@ int main(){
 
 	jugador j1 = {"nombre",0};
 	char aux;
-	int eleccion;
-	int puntuaciontotal;
+	int eleccionmenu;
 	FILE *f1;
 	FILE *f2;
 	f1 = fopen("normascaperoom.txt","r");
@@ -63,14 +60,15 @@ int main(){
     {
         printf("--MENU PRINCIPAL--\n");
         printf("1) Modo dificil.\n2) Modo facil\n3)Salir del programa.\n");
-        scanf("%i", &eleccion);
-        switch(eleccion)
+        scanf("%i", &eleccionmenu);
+        switch(eleccionmenu)
         {
             case 1:
                 nivel_dificil();
                 break;
             case 2:
                 nivel_facil();
+                j1.puntuacion += nivel_facil();
                 break;
             case 3:
                 break;
@@ -78,7 +76,7 @@ int main(){
                 break;
 
         }
-    }while (eleccion != 3);
+    }while (eleccionmenu != 3);
 
 
 	return 0;
@@ -86,11 +84,63 @@ int main(){
 
 void nivel_dificil()
 {
-    printf("Ha elegido el modo dificil.\n");
+    printf("Has cometido un grave error, bienvenido a tu peor pesadilla\n");
+    printf("Has decidido realizar las pruebas en modo hardcore\n");
 }
-void nivel_facil()
+int nivel_facil()
 {
-    printf("Ha elegido modo facil.\n");
+    int aux;
+    int eleccionfacil;
+    int puntuacionfacil;
+    printf("Bienvenido a la habitacion de la que debes escapar\n");
+    printf("A partir de ahora vas a  tener que tener que elegir que prueba quieres elegir para avanzar\n");
+    printf("Debes alcanzar una puntuación mínima para llegar a la prueba final (el trivia), que se ira sumando en tu perfil de jugador\n");
+
+    do
+    {
+        puntuacionfacil = 0;
+        int *p = &puntuacionfacil;
+        printf("Que prueba deseas realizar?\n");
+        printf("1)Caja sorpresa\n2)Ahorcado\n3)buscar en estanteria\n4)wordle\n5)tres en raya\n6)salir\n");
+        scanf("%i",&eleccionfacil);
+        switch(eleccionfacil)
+        {
+        case 1:
+            {
+                void buscarcajas (p);
+                printf("tu puntuacion es %i\n",puntuacionfacil);
+                break;
+            }
+        case 2:
+            {
+                void ahorcado();
+                break;
+            }
+        case 3:
+            {
+                void buscarestanteria ();
+                break;
+            }
+        case 4:
+            {
+                void wordle();
+                break;
+            }
+        case 5:
+            {
+                void tres_en_raya();
+                break;
+            }
+        case 6:
+            {
+                puntuacionfacil = 21;
+                break;
+            }
+        }
+    }
+    while(puntuacionfacil <= 20);
+
+    return puntuacionfacil;
 }
 
 void continuar(){
