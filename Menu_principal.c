@@ -14,7 +14,7 @@ typedef struct
 int main(){
 
     //variables
-
+    srand(time(NULL));
 	jugador j1 = {"nombre",0};
 	char aux;
 	int eleccionmenu;
@@ -91,15 +91,13 @@ int nivel_facil()
 {
     int aux;
     int eleccionfacil;
-    int puntuacionfacil;
+    int puntuacionfacil = 0;
     printf("Bienvenido a la habitacion de la que debes escapar\n");
     printf("A partir de ahora vas a  tener que tener que elegir que prueba quieres elegir para avanzar\n");
     printf("Debes alcanzar una puntuación mínima para llegar a la prueba final (el trivia), que se ira sumando en tu perfil de jugador\n");
 
     do
     {
-        puntuacionfacil = 0;
-        int *p = &puntuacionfacil;
         printf("Que prueba deseas realizar?\n");
         printf("1)Caja sorpresa\n2)Ahorcado\n3)buscar en estanteria\n4)wordle\n5)tres en raya\n6)salir\n");
         scanf("%i",&eleccionfacil);
@@ -107,28 +105,27 @@ int nivel_facil()
         {
         case 1:
             {
-                void buscarcajas (p);
+                buscarcajas (&puntuacionfacil);
                 printf("tu puntuacion es %i\n",puntuacionfacil);
                 break;
             }
         case 2:
             {
-                void ahorcado();
+                ahorcado(&puntuacionfacil);
                 break;
             }
         case 3:
             {
-                void buscarestanteria ();
+                buscarestanteria (&puntuacionfacil);
                 break;
             }
         case 4:
             {
-                void wordle();
                 break;
             }
         case 5:
             {
-                void tres_en_raya();
+                tres_en_raya(&puntuacionfacil);
                 break;
             }
         case 6:

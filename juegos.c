@@ -7,6 +7,7 @@
 
 
 
+
 ///AQUI EMPIEZA EL JUEGO DEL AHORCADO///
 void ahorcado(int *p_puntuacion)
 {
@@ -222,15 +223,14 @@ void buscarcajas (int *p_puntuacion)
 {
     int n, a;
 
-    srand(time(NULL));
     n = rand() % 50 + 1;
 
- if (n<=6)
+ if (n<=25)
   {
     printf ("la llave esta en las cajas\n");
     printf ("¿Quieres cogerla?\n");
     printf ("Y/N\n");
-    scanf ("%c", &a);
+    scanf (" %c", &a);
 
     if (a==89 || a==121)
             {
@@ -247,7 +247,7 @@ void buscarestanteria ()
 {
     int n, a, b;
 
-    srand(time(NULL));
+
     n = rand() % 10 + 1;
 
  if (n<=5)
@@ -271,3 +271,58 @@ void buscarestanteria ()
  } else printf ("no hay nada en la estanteria\n");
 
 }
+
+
+ ///TRES EN RAYA///
+
+int compr_win(char x, char matriz[3][3])
+{
+        int i; //para recorrer bucles
+        for (i = 0; i < 3; i++)
+        {
+            if (matriz[i][0] == x || matriz[i][1] == x || matriz[i][2] == x)
+                return 1;
+        }
+        for (i = 0; i < 3; i++)
+        {
+            if (matriz[0][i] == x || matriz[1][i] == x || matriz[2][i] == x)
+                return 1;
+        }
+        if (matriz[0][0] == x || matriz[1][1] == x || matriz[2][2] == x)
+            return 1;
+        if (matriz[0][2] == x || matriz[1][1] == x || matriz[2][0] == x)
+
+        return 0;
+
+}
+void tres_en_raya(int *p_puntuacion)
+{
+    char matriz_tablero[3][3] = {'1', '2', '3',
+                                '4', '5', '6',
+                                '7', '8', '9'};
+    char turno_jugador;
+    int n;  //numero random que da una posicion de la matriz
+    print_tablero(matriz_tablero);
+    do
+    {
+
+    } while (compr_win('x', matriz_tablero) != 1 && compr_win('o', matriz_tablero) != 1);
+}
+//funciones del tres en raya//
+
+
+void print_tablero(char matriz[3][3])
+{
+    printf("  %c  |  %c  |  %c  \n", matriz[0][0], matriz[0][1], matriz[0][2]);
+    printf("-----------------\n");
+    printf("  %c  |  %c  |  %c  \n", matriz[1][0], matriz[1][1], matriz[1][2]);
+    printf("-----------------\n");
+    printf("  %c  |  %c  |  %c  \n", matriz[2][0], matriz[2][1], matriz[2][2]);
+}
+
+
+///FIN DEL TRES EN RAYA///
+
+
+
+
