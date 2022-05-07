@@ -280,33 +280,61 @@ int compr_win(char x, char matriz[3][3])
         int i; //para recorrer bucles
         for (i = 0; i < 3; i++)
         {
-            if (matriz[i][0] == x || matriz[i][1] == x || matriz[i][2] == x)
+            if (matriz[i][0] == x && matriz[i][1] == x && matriz[i][2] == x)
                 return 1;
         }
         for (i = 0; i < 3; i++)
         {
-            if (matriz[0][i] == x || matriz[1][i] == x || matriz[2][i] == x)
+            if (matriz[0][i] == x && matriz[1][i] == x && matriz[2][i] == x)
                 return 1;
         }
-        if (matriz[0][0] == x || matriz[1][1] == x || matriz[2][2] == x)
+        if (matriz[0][0] == x && matriz[1][1] == x && matriz[2][2] == x)
             return 1;
-        if (matriz[0][2] == x || matriz[1][1] == x || matriz[2][0] == x)
+        if (matriz[0][2] == x && matriz[1][1] == x && matriz[2][0] == x)
+            return 1;
 
         return 0;
 
 }
+
+void turno_jugador(char *p_matriz, char eleccion)
+{
+        int i;
+        for (i = 0; i < 9; i++)
+        {
+            if (p_matriz[i] == eleccion)
+                p_matriz[i] = 'x';
+        }
+}
+
 void tres_en_raya(int *p_puntuacion)
 {
     char matriz_tablero[3][3] = {'1', '2', '3',
                                 '4', '5', '6',
                                 '7', '8', '9'};
-    char turno_jugador;
-    int n;  //numero random que da una posicion de la matriz
-    print_tablero(matriz_tablero);
+    char eleccion__jugador, *p;
+    p = matriz_tablero;
     do
     {
+            turno_maquina(p);
+            printf("\n");
+            print_tablero(p);
+            printf("\n");
+            if (compr_win('o', matriz_tablero) == 1)
+            {
+                printf("Has perdido.\n");
+                 break;
+            }
+            scanf(" %c", &eleccion__jugador);
+            turno_jugador(p, eleccion__jugador);
 
     } while (compr_win('x', matriz_tablero) != 1 && compr_win('o', matriz_tablero) != 1);
+
+    if (compr_win('x', matriz_tablero) == 1)
+    {
+        print_tablero(p);
+        printf("\n--TRES EN RAYA--, ENHORABUENA\n");
+    }
 }
 //funciones del tres en raya//
 
@@ -319,6 +347,24 @@ void print_tablero(char matriz[3][3])
     printf("-----------------\n");
     printf("  %c  |  %c  |  %c  \n", matriz[2][0], matriz[2][1], matriz[2][2]);
 }
+
+void turno_maquina(char *p_matriz)
+{
+    int n;//numero random que da una posicion de la matriz
+    do
+    {
+        n = rand() % 9;
+
+        if (p_matriz[n] != 'x' && p_matriz[n] != 'o')
+        {
+            p_matriz[n] = 'o';
+            break;
+        }
+    } while (1);
+
+
+}
+
 
 
 ///FIN DEL TRES EN RAYA///

@@ -27,4 +27,6 @@ void imprimir_vidas(int vidas);  //imprime los corazones de las vidas
 //FUNCIONES DEL TRES EN RAYA
 void print_tablero(char matriz[3][3]);
 int compr_win(char x, char matriz[3][3]); //devuelve un uno si ese char tiene 3 en raya. Si no, devuelve un 0.
+void turno_maquina(char *p_matriz);
+void turno_jugador(char *p_matriz);
 
