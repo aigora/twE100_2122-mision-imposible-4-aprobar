@@ -9,7 +9,7 @@
 
 
 ///AQUI EMPIEZA EL JUEGO DEL AHORCADO///
-void ahorcado(int *p_puntuacion)
+void ahorcado(int *p_puntuacion, int *p_hab)
 {
     int vidas = 10;
     char frase_secreta[] = "paternidad";        //frase o palabra que adivinar
@@ -111,6 +111,8 @@ void ahorcado(int *p_puntuacion)
         printf("Enhorabuena, la palabra era ");
         print_cadena(frase_secreta);
         printf("Has superado la prueba.\n\n");
+        *p_puntuacion += 10;
+        *p_hab += 1;
     }
 }
 
@@ -197,7 +199,7 @@ int trivia_dificil ()
     printf("Tercera pregunta: ¿Que querido actor fallecido en el 2014 por suicidio bromeaba diciendo, nunca pelees con alguien feo, no tiene nada que perder?\n");
     printf("Opciones:\n 1)Elton john\n 2)Robin williams\n 3)Conrad winter\n\n");
     scanf("%i",&c);
-    printf("Cuarta pregunta: ¿En que mes se obersvan las perseidas?\n");
+    printf("Cuarta pregunta: ¿En que mes se observan las perseidas?\n");
     printf("Opciones:\n 1)Enero\n 2)Octubre\n 3)Agosto\n\n");
     scanf("%i",&d);
 
@@ -217,15 +219,15 @@ int trivia_dificil ()
 
 
 
-				                                  // Puebas de buscar//
+				                                  /// Puebas de buscar///
 
-void buscarcajas (int *p_puntuacion)
+void buscarcajas (int *p_puntuacion, int *p_hab)
 {
     int n, a;
 
     n = rand() % 50 + 1;
 
- if (n<=25)
+ if (n<=10)
   {
     printf ("la llave esta en las cajas\n");
     printf ("¿Quieres cogerla?\n");
@@ -236,14 +238,15 @@ void buscarcajas (int *p_puntuacion)
             {
 
         printf ("has conseguido la llave\n");
-        *p_puntuacion += 5;
+        *p_puntuacion += 3;
+        *p_hab += 1;
             };
   } else printf ("no hay nada en las cajas\n");
 
 
 }
 
-void buscarestanteria ()
+void buscarestanteria (int *p_puntuacion, int *p_hab)
 {
     int n, a, b;
 
@@ -265,7 +268,10 @@ void buscarestanteria ()
             {
                 printf ("Te has caido de la estanteria y has muerto\n");
                 printf ("GAME OVER\n");
-            }  else printf ("has conseguido la llave\n");
+            }  else {
+                printf ("has conseguido la llave\n");
+                *p_puntuacion += 10;
+                *p_hab += 1;}
       }
 
  } else printf ("no hay nada en la estanteria\n");
@@ -307,7 +313,7 @@ void turno_jugador(char *p_matriz, char eleccion)
         }
 }
 
-void tres_en_raya(int *p_puntuacion)
+void tres_en_raya(int *p_puntuacion, int *p_hab)
 {
     char matriz_tablero[3][3] = {'1', '2', '3',
                                 '4', '5', '6',
@@ -346,6 +352,8 @@ void tres_en_raya(int *p_puntuacion)
     {
         print_tablero(p);
         printf("\n--TRES EN RAYA--, ENHORABUENA\n");
+        *p_puntuacion += 10;
+        *p_hab += 1;
     }
 }
 //funciones del tres en raya//
@@ -400,10 +408,32 @@ int empate(char *p_matriz)
 
 
 }
-
-
-
 ///FIN DEL TRES EN RAYA///
+
+/// juego aleatorio ///
+
+void juegoaleatorio (int *p_puntuacion, int *p_hab){
+int n= rand () %3 +1;
+switch (n)
+    {
+    case 1:
+        ahorcado(p_puntuacion,p_hab);
+        break;
+    case 2:
+        ahorcado (p_puntuacion,p_hab);
+        break;
+    case 3:
+        tres_en_raya (p_puntuacion,p_hab);
+        break;
+
+    default:
+        break;
+
+
+    }
+
+
+}
 
 
 
