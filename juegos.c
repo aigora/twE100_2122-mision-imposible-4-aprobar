@@ -262,7 +262,7 @@ void buscarestanteria (int *p_puntuacion, int *p_hab)
     if (a==89 || a==121)
       {
 
-            srand(time(NULL));
+
             b = rand() % 10 + 1;
             if (b>=5)
             {
@@ -404,16 +404,13 @@ int empate(char *p_matriz)
     }
 
 
-
-
-
 }
 ///FIN DEL TRES EN RAYA///
 
 /// juego aleatorio ///
 
 void juegoaleatorio (int *p_puntuacion, int *p_hab){
-int n= rand () %3 +1;
+int n = rand () % 3 + 1;
 switch (n)
     {
     case 1:
@@ -425,11 +422,8 @@ switch (n)
     case 3:
         tres_en_raya (p_puntuacion,p_hab);
         break;
-
     default:
         break;
-
-
     }
 
 
