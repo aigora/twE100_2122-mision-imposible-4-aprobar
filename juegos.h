@@ -8,11 +8,12 @@ void nivel_dificil();
 int nivel_facil();
 
 
-void wordle(int *p_puntuacion);
-void ahorcado(int *p_puntuacion);
-void tres_en_raya(int *p_puntuacion);
-void buscarcajas (int *p_puntuacion);
-void buscarestanteria (int *p_puntuacion);
+void wordle(int *p_puntuacion, int *p_hab);
+void ahorcado(int *p_puntuacion, int *p_hab);
+void tres_en_raya(int *p_puntuacion, int *p_hab);
+void buscarcajas (int *p_puntuacion, int *p_hab);
+void buscarestanteria (int *p_puntuacion, int *p_hab);
+void juegoaleatorio (int *p_puntuacion, int *p_hab);
 
 void continuar();
 int trivia_facil ();
