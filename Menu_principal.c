@@ -84,11 +84,55 @@ int main(){
 
 void nivel_dificil()
 {
-    printf("Has cometido un grave error, bienvenido a tu peor pesadilla\n");
-    printf("Has decidido realizar las pruebas en modo hardcore\n");
+    int hab= 1;
+    int aux;
+    int eleccionfacil;
+    int puntuacionfacil = 0;
+
+    printf("hola humano, te han traído a ti para que no os extingáis, \n");
+    printf("pero eso ya lo sabes, sabrás también que no eres el primero \n");
+    printf("que entra por esa puerta,de hecho eres el número 354, así que vete o bueno, muere como los demás \n");
+    printf("Bienvenido a la habitacion de la que debes escapar\n");
+    printf("A partir de ahora vas a  tener que tener que elegir que prueba quieres elegir para avanzar\n");
+    printf("Debes alcanzar una puntuación mínima para llegar a la prueba final (el trivia), que se ira sumando en tu perfil de jugador\n");
+
+    do
+    {
+        printf("Que prueba deseas realizar?\n");
+        printf("1)buscar entre cajas\n2)mirar en una estanteria\n3)encender el ordenador\n");
+        scanf(" %i",&eleccionfacil);
+        switch(eleccionfacil)
+        {
+        case 1:
+            {
+                buscarcajas (&puntuacionfacil, &hab);
+                printf("tu puntuacion es %i\n",puntuacionfacil);
+                printf("habitacion : %i\n",hab);
+                break;
+            }
+        case 2:
+            {
+                buscarestanteria (&puntuacionfacil, &hab);
+                printf("tu puntuacion es %i\n",puntuacionfacil);
+                printf("habitacion : %i\n",hab);
+                break;
+            }
+        case 3:
+            {
+                juegoaleatorio (&puntuacionfacil, &hab);
+                printf("tu puntuacion es %i\n",puntuacionfacil);
+                printf("habitacion : %i\n",hab);
+                break;
+            }
+        }
+    }
+    while(hab < 6);
+
+    return puntuacionfacil;
 }
 int nivel_facil()
 {
+    int hab= 1;
     int aux;
     int eleccionfacil;
     int puntuacionfacil = 0;
@@ -99,43 +143,34 @@ int nivel_facil()
     do
     {
         printf("Que prueba deseas realizar?\n");
-        printf("1)Caja sorpresa\n2)Ahorcado\n3)buscar en estanteria\n4)wordle\n5)tres en raya\n6)salir\n");
-        scanf("%i",&eleccionfacil);
+        printf("1)buscar entre cajas\n2)mirar en una estanteria\n3)encender el ordenador\n");
+        scanf(" %i",&eleccionfacil);
         switch(eleccionfacil)
         {
         case 1:
             {
-                buscarcajas (&puntuacionfacil);
+                buscarcajas (&puntuacionfacil, &hab);
                 printf("tu puntuacion es %i\n",puntuacionfacil);
+                printf("habitacion : %i\n",hab);
                 break;
             }
         case 2:
             {
-                ahorcado(&puntuacionfacil);
+                buscarestanteria (&puntuacionfacil, &hab);
+                printf("tu puntuacion es %i\n",puntuacionfacil);
+                printf("habitacion : %i\n",hab);
                 break;
             }
         case 3:
             {
-                buscarestanteria (&puntuacionfacil);
-                break;
-            }
-        case 4:
-            {
-                break;
-            }
-        case 5:
-            {
-                tres_en_raya(&puntuacionfacil);
-                break;
-            }
-        case 6:
-            {
-                puntuacionfacil = 21;
+                juegoaleatorio (&puntuacionfacil, &hab);
+                printf("tu puntuacion es %i\n",puntuacionfacil);
+                printf("habitacion : %i\n",hab);
                 break;
             }
         }
     }
-    while(puntuacionfacil <= 20);
+    while(hab < 6);
 
     return puntuacionfacil;
 }
