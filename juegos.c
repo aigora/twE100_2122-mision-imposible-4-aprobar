@@ -317,6 +317,11 @@ void tres_en_raya(int *p_puntuacion)
     do
     {
             turno_maquina(p);
+            if (empate(p) == 1)
+            {
+                printf("Ha habido empate.\n");
+                break;
+            }
             printf("\n");
             print_tablero(p);
             printf("\n");
@@ -327,6 +332,13 @@ void tres_en_raya(int *p_puntuacion)
             }
             scanf(" %c", &eleccion__jugador);
             turno_jugador(p, eleccion__jugador);
+            if (empate(p) == 1)
+            {
+                print_tablero(p);
+                printf("\n");
+                printf("Ha habido empate.\n");
+                break;
+            }
 
     } while (compr_win('x', matriz_tablero) != 1 && compr_win('o', matriz_tablero) != 1);
 
@@ -361,6 +373,30 @@ void turno_maquina(char *p_matriz)
             break;
         }
     } while (1);
+
+
+}
+
+int empate(char *p_matriz)
+{
+    int i, contador = 0;
+    for (i = 0; i < 9; i++)
+    {
+        if (p_matriz[i] == 'o' || p_matriz[i] == 'x')
+        {
+            contador++;
+        }
+    }
+    if (contador == 9 && compr_win('x', p_matriz) != 1 && compr_win('o', p_matriz) != 1)
+    {
+        return 1;
+    } else
+    {
+        return 0;
+    }
+
+
+
 
 
 }
