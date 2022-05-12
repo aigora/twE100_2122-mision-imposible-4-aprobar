@@ -15,6 +15,7 @@ int main(){
 
     //variables
     srand(time(NULL));
+
 	jugador j1 = {"nombre",0};
 	char aux;
 	int eleccionmenu;
@@ -46,7 +47,7 @@ int main(){
 
 
 	printf("Escriba el nombre del jugador (maximo 10 letras)\n");
-	scanf("%s",&j1.apodo);
+	scanf("%s",j1.apodo);
 
 
     fprintf(f2,"%s",j1.apodo);
@@ -98,6 +99,8 @@ void nivel_dificil()
 
     do
     {
+        printf("tu puntuacion es %i\n",puntuacionfacil);
+        printf("habitacion : %i\n",hab);
         printf("Que prueba deseas realizar?\n");
         printf("1)buscar entre cajas\n2)mirar en una estanteria\n3)encender el ordenador\n");
         scanf(" %i",&eleccionfacil);
@@ -106,22 +109,16 @@ void nivel_dificil()
         case 1:
             {
                 buscarcajas (&puntuacionfacil, &hab);
-                printf("tu puntuacion es %i\n",puntuacionfacil);
-                printf("habitacion : %i\n",hab);
                 break;
             }
         case 2:
             {
                 buscarestanteria (&puntuacionfacil, &hab);
-                printf("tu puntuacion es %i\n",puntuacionfacil);
-                printf("habitacion : %i\n",hab);
                 break;
             }
         case 3:
             {
                 juegoaleatorio (&puntuacionfacil, &hab);
-                printf("tu puntuacion es %i\n",puntuacionfacil);
-                printf("habitacion : %i\n",hab);
                 break;
             }
         }
@@ -142,6 +139,8 @@ int nivel_facil()
 
     do
     {
+        printf("Tu puntuacion es %i\n",puntuacionfacil);
+        printf("habitacion : %i\n",hab);
         printf("Que prueba deseas realizar?\n");
         printf("1)buscar entre cajas\n2)mirar en una estanteria\n3)encender el ordenador\n");
         scanf(" %i",&eleccionfacil);
@@ -150,22 +149,17 @@ int nivel_facil()
         case 1:
             {
                 buscarcajas (&puntuacionfacil, &hab);
-                printf("tu puntuacion es %i\n",puntuacionfacil);
-                printf("habitacion : %i\n",hab);
                 break;
             }
         case 2:
             {
                 buscarestanteria (&puntuacionfacil, &hab);
-                printf("tu puntuacion es %i\n",puntuacionfacil);
-                printf("habitacion : %i\n",hab);
                 break;
             }
         case 3:
             {
                 juegoaleatorio (&puntuacionfacil, &hab);
-                printf("tu puntuacion es %i\n",puntuacionfacil);
-                printf("habitacion : %i\n",hab);
+
                 break;
             }
         }
