@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 
-void nivel_dificil();
+int nivel_dificil();
 int nivel_facil();
 
 

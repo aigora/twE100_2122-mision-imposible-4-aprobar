@@ -60,19 +60,26 @@ int main(){
 	do
     {
         printf("--MENU PRINCIPAL--\n");
-        printf("1) Modo dificil.\n2) Modo facil\n3)Salir del programa.\n");
+        printf("1) Modo dificil.\n2) Modo facil\n3) Salir del programa.\n4) Puntuacion.\n");
         scanf("%i", &eleccionmenu);
         switch(eleccionmenu)
         {
             case 1:
-                nivel_dificil();
+                j1.puntuacion += nivel_dificil();
+                printf("enhorabuena conseguiste escapar\n\n\n");
+                printf("ahora supera la prueba final\n\n\n");
+                j1.puntuacion += trivia_dificil();
                 break;
             case 2:
-                nivel_facil();
                 j1.puntuacion += nivel_facil();
+                printf("enhorabuena conseguiste escapar\n\n\n");
+                printf("ahora supera la prueba final\n\n\n");
+                j1.puntuacion += trivia_facil();
                 break;
             case 3:
                 break;
+            case 4:
+                printf("la puntuacion del jugador %s es: %i\n\n",j1.apodo,j1.puntuacion);
             default:
                 break;
 
@@ -83,7 +90,7 @@ int main(){
 	return 0;
 }
 
-void nivel_dificil()
+int nivel_dificil()
 {
     int hab= 1;
     int aux;
@@ -165,6 +172,7 @@ int nivel_facil()
         }
     }
     while(hab < 6);
+
 
     return puntuacionfacil;
 }
