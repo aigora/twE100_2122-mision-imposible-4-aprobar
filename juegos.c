@@ -149,9 +149,9 @@ int trivia_facil ()
 
     printf("Bienvenido a la prueba final\n\n");
     printf("Vas a tener que responder a varias preguntas para poder escapar finalmente\n\n");
-    printf("De 4 temas: Historia, Geografia, Arte y Cultura general(Presione enter para continuar)\n\n");
+    printf("De 4 temas: Historia, Geografia, Arte y Cultura general\n\n");
 
-    continuar();
+
 
     printf("Primera pregunta: ¿Como se llamaba el monje polaco que fue la primera persona en afirmar que la tierra se movia?\n");
     printf("Opciones:\n 1)Nicolas Copernico\n 2)Galileo\n 3)Schrodinger\n\n");
@@ -258,7 +258,7 @@ void buscarestanteria (int *p_puntuacion, int *p_hab)
     printf ("la llave esta en la estanteria\n");
     printf ("¿Quieres cogerla?\n");
     printf ("Y/N\n");
-    scanf ("%c", &a);
+    scanf (" %c", &a);
     if (a==89 || a==121)
       {
 
