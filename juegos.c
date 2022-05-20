@@ -143,6 +143,8 @@ void print_cadena(char cadena[])
 }
 
                           //TRIVIA//
+
+
 int trivia_facil ()
 {
     int a,b,c,d;
@@ -221,6 +223,7 @@ int trivia_dificil ()
 
 				                                  /// Puebas de buscar///
 
+
 void buscarcajas (int *p_puntuacion, int *p_hab)
 {
     int n, a;
@@ -245,6 +248,7 @@ void buscarcajas (int *p_puntuacion, int *p_hab)
 
 
 }
+
 
 void buscarestanteria (int *p_puntuacion, int *p_hab)
 {
@@ -279,7 +283,9 @@ void buscarestanteria (int *p_puntuacion, int *p_hab)
 }
 
 
- ///TRES EN RAYA///
+
+                                                    ///TRES EN RAYA///
+
 
 int compr_win(char x, char matriz[3][3])
 {

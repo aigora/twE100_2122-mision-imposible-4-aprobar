@@ -24,33 +24,17 @@
 	<time.h>
 	<stdlib.h>
 
-1652876986 source:c:\users\mlafi\documents\github\juegos.c
+1653056214 source:c:\users\mlafi\documents\github\juegos.c
 	<stdio.h>
 	<string.h>
 	<time.h>
 	<stdlib.h>
 
-1652876804 source:c:\users\mlafi\documents\github\menu_principal.c
+1653056214 source:c:\users\mlafi\documents\github\menu_principal.c
 	<stdio.h>
 	"juegos.h"
 
-1652279516 c:\users\mlafi\documents\github\juegos.h
-	<string.h>
-	<stdio.h>
-	<time.h>
-	<stdlib.h>
-
-1652277764 source:c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\juegos.c
-	<stdio.h>
-	<string.h>
-	<time.h>
-	<stdlib.h>
-
-1652279298 source:c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\menu_principal.c
-	<stdio.h>
-	"juegos.h"
-
-1652277867 c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\juegos.h
+1653056214 c:\users\mlafi\documents\github\juegos.h
 	<string.h>
 	<stdio.h>
 	<time.h>
@@ -61,13 +45,23 @@
 	<string.h>
 	<time.h>
 	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<stdlib.h>
 
 1651248935 source:c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\menu_principal.c
+	<stdio.h>
+	"juegos.h"
 	<stdio.h>
 	<locale.h>
 	"juegos.h"
 
 1651248935 c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\juegos.h
+	<string.h>
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
 	<string.h>
 	<stdio.h>
 	<time.h>

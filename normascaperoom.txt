@@ -1,12 +1,14 @@
 
-Tu objetivo es escapar de la habitacion en la que te encuentras realizando algunas decisiones y pruebas/
+Te encuentras en una serie de habitaciones en las que vas a tener que superar unas pruebas para escapar/
 
-Deberas superar un numero de pruebas antes de poder escapar/
+Para esto debes encontrar la llave de cada habitacion/
 
-Si fallas alguna volveras a la habitacion para volver a intentarlo/
+En cada habitacion tienes 3 opciones/
 
-Cuando superes estas pruebas deberas superar la prueba final/
+Encender el ordenador para jugar a un minijuego aleatorio/
 
-Si se falla esta prueba final se acaba el juego/
+Buscar entre unas cajas con una probabilidad de encontrar la llave/
+
+O buscar en unas estanterias con la posibilidad de caerte o encontrar la llave/
 
 Buena suerte escapando, la vas a necesitar (pulse intro para continuar)/
