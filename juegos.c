@@ -12,15 +12,45 @@
 void ahorcado(int *p_puntuacion, int *p_hab)
 {
     int vidas = 10;
-    char frase_secreta[] = "paternidad";        //frase o palabra que adivinar
+    char frase_secreta[100];        //frase o palabra que adivinar
     char jugador[50];     //frase o palabra que va rellenando el jugador
     int eleccion_jug;       //eleccion de letra o frase por parte del jugador
     int numero_letras = 0;      //numero de letras de la frase secreta
     int i = 0;      //para recorrer bucles
     char letra_jug;  //letra que dice el jugador
     int x = 0;      //se utiliza para comprobar si la letra esta o no en la palabra o frase
-    char palabra_entera[50];  //si el jugador elige decir palabra entera, se alamcena aqui
+    char palabra_entera[50];  //si el jugador elige decir palabra entera, se almacena aqui
 
+    int n_lineas = 0, random;   //para contar las lineas del fichero de palabras
+    char c, prueba[100]; //variable auxiliar
+
+
+    FILE *p_f;
+    p_f = fopen("palabras_ahorcado.txt", "r");
+
+    while (fscanf(p_f, "%c", &c) != EOF)
+    {
+        if (c =='\n')
+            n_lineas++;
+    }
+    fseek(p_f, 0, SEEK_SET);
+    random = rand() % n_lineas;
+    printf("\nnumero de lineas:%i\n", n_lineas);
+
+
+i = 0;
+    while (fscanf(p_f, "%[^;];\n", frase_secreta) != EOF)
+    {
+        if (i == random)
+        {
+            break;
+        }
+        i++;
+    }
+
+
+
+    i = 0;
     while (frase_secreta[i] != '\0')
     {
         numero_letras++;

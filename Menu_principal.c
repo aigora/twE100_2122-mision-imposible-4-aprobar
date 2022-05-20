@@ -26,7 +26,6 @@ int main(){
 
 	//Comienza el programa
 
-
 	printf("Bienvenido a nuestro scaperoom (presione enter para continuar)\n");
 	continuar();
 
