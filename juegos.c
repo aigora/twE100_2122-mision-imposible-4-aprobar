@@ -135,6 +135,7 @@ i = 0;
     if (vidas == 0)
     {
         printf("--GAME OVER--");
+        *p_puntuacion -= 5;
     }                                        //resultado final del ahorcado
     else
     {
@@ -300,11 +301,11 @@ void buscarestanteria (int *p_puntuacion, int *p_hab)
             b = rand() % 10 + 1;
             if (b>=5)
             {
-                printf ("Te has caido de la estanteria y has muerto\n");
-                printf ("GAME OVER\n");
+                printf ("Te has caido de la estanteria\n");
+                *p_puntuacion -= 3;
             }  else {
                 printf ("has conseguido la llave\n");
-                *p_puntuacion += 10;
+                *p_puntuacion += 3;
                 *p_hab += 1;}
       }
 
@@ -370,6 +371,7 @@ void tres_en_raya(int *p_puntuacion, int *p_hab)
             if (compr_win('o', matriz_tablero) == 1)
             {
                 printf("Has perdido.\n");
+                *p_puntuacion -= 5;
                  break;
             }
             scanf(" %c", &eleccion__jugador);
@@ -464,6 +466,10 @@ switch (n)
 
 
 }
+
+
+
+
 
 
 
