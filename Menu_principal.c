@@ -96,12 +96,9 @@ int nivel_dificil()
     int eleccionfacil;
     int puntuacionfacil = 0;
 
-    printf("hola humano, te han traÌdo a ti para que no os exting·is, \n");
-    printf("pero eso ya lo sabes, sabr·s tambiÈn que no eres el primero \n");
-    printf("que entra por esa puerta,de hecho eres el n˙mero 354, asÌ que vete o bueno, muere como los dem·s \n");
-    printf("Bienvenido a las habitaciones de las que debes escapar\n");
-    printf("A partir de ahora vas a  tener que tener que pensar que prueba quieres elegir para avanzar\n");
-    printf("Debes superar 6 habitaciones para llegar a la prueba final (el trivia), tu puntuacion se ira sumando en tu perfil de jugador\n");
+    printf("hola humano, te han tra√≠do a ti para que no os exting√°is, \n");
+    printf("pero eso ya lo sabes, sabr√°s tambi√©n que no eres el primero \n");
+    printf("que entra por esa puerta,de hecho eres el n√∫mero 354, as√≠ que vete, dejame en paz \n");
 
     do
     {
@@ -139,14 +136,14 @@ int nivel_facil()
     int aux;
     int eleccionfacil;
     int puntuacionfacil = 0;
-    printf("Bienvenido a la habitacion de la que debes escapar\n");
+    printf("Bienvenido a las habitaciones de las que debes escapar\n");
     printf("A partir de ahora vas a  tener que tener que elegir que prueba quieres elegir para avanzar\n");
-    printf("Debes superar 4 habitaciones para llegar a la prueba final (el trivia),tu puntuacion se ira sumando en tu perfil de jugador\n");
+    printf("Debes superar 4 habitaciones para llegar a la prueba final (el trivia),tu puntuacion se ira sumando en tu perfil de jugador\n\n\n\n\n\n\n");
 
     do
     {
         printf("Tu puntuacion es %i\n",puntuacionfacil);
-        printf("habitacion : %i\n\n",hab);
+        printf("habitacion : %i\n",hab);
         printf("Que prueba deseas realizar?\n");
         printf("1)buscar entre cajas\n2)mirar en una estanteria\n3)encender el ordenador\n");
         scanf(" %i",&eleccionfacil);
