@@ -49,7 +49,6 @@ i = 0;
     }
 
 
-
     i = 0;
     while (frase_secreta[i] != '\0')
     {
@@ -134,6 +133,8 @@ i = 0;
 
     if (vidas == 0)
     {
+        printf("La palabra era ");
+        print_cadena(frase_secreta);
         printf("--GAME OVER--");
         *p_puntuacion -= 5;
     }                                        //resultado final del ahorcado
