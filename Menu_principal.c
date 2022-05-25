@@ -59,7 +59,7 @@ int main(){
 	do
     {
         printf("--MENU PRINCIPAL--\n\n");
-        printf("1) Modo dificil.\n2) Modo facil\n3) Salir del programa.\n4) Puntuacion.\n");
+        printf("1) Modo dificil.\n2) Modo facil\n3) Salir del programa.\n4) Puntuacion.\n5) Aarcade.\n");
         scanf("%i", &eleccionmenu);
         switch(eleccionmenu)
         {
@@ -80,6 +80,9 @@ int main(){
             case 4:
                 printf("La puntuacion del jugador %s es: %i\n\n",j1.apodo,j1.puntuacion);
             default:
+            case 5:
+                j1.puntuacion += nivel_arcade();
+
                 break;
 
         }
@@ -88,17 +91,17 @@ int main(){
 
 	return 0;
 }
-
-int nivel_dificil()
+int nivel_arcade()
 {
     int hab= 1;
     int aux;
     int eleccionfacil;
     int puntuacionfacil = 0;
 
-    printf("hola humano, te han traído a ti para que no os extingáis, \n");
-    printf("pero eso ya lo sabes, sabrás también que no eres el primero \n");
-    printf("que entra por esa puerta,de hecho eres el número 354, así que vete, dejame en paz \n");
+    printf("Bienvenido al modo arcade, esto es un bucle infinito\n");
+    printf("en el que puedes jugar para ver hasta que habitacion llegas\n");
+    printf("o cual es tu maxima puntuacion\n\n");
+    printf("diviertete ;)\n\n");
 
     do
     {
@@ -126,7 +129,50 @@ int nivel_dificil()
             }
         }
     }
-    while(hab < 6);
+    while(hab != 0);
+
+    return puntuacionfacil;
+}
+
+
+int nivel_dificil()
+{
+    int hab= 1;
+    int aux;
+    int eleccionfacil;
+    int puntuacionfacil = 0;
+
+    printf("hola humano, te han traÃ­do a ti para que no os extingÃ¡is, \n");
+    printf("pero eso ya lo sabes, sabrÃ¡s tambiÃ©n que no eres el primero \n");
+    printf("que entra por esa puerta,de hecho eres el nÃºmero 354, asÃ­ que vete, dejame en paz \n");
+
+    do
+    {
+        printf("tu puntuacion es %i\n",puntuacionfacil);
+        printf("habitacion : %i\n",hab);
+        printf("Que prueba deseas realizar?\n");
+        printf("1)buscar entre cajas\n2)mirar en una estanteria\n3)encender el ordenador\n");
+        scanf(" %i",&eleccionfacil);
+        switch(eleccionfacil)
+        {
+        case 1:
+            {
+                buscarcajas (&puntuacionfacil, &hab);
+                break;
+            }
+        case 2:
+            {
+                buscarestanteria (&puntuacionfacil, &hab);
+                break;
+            }
+        case 3:
+            {
+                juegoaleatorio (&puntuacionfacil, &hab);
+                break;
+            }
+        }
+    }
+    while(hab < 12);
 
     return puntuacionfacil;
 }
@@ -177,3 +223,4 @@ void continuar(){
 	char enter;
 	getchar();
 }
+
