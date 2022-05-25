@@ -363,6 +363,9 @@ void tres_en_raya(int *p_puntuacion, int *p_hab)
             turno_maquina(p);
             if (empate(p) == 1)
             {
+                printf("\n");
+                print_tablero(p);
+                printf("\n");
                 printf("Ha habido empate.\n");
                 break;
             }

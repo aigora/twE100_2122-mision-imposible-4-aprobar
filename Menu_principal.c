@@ -47,6 +47,7 @@ int main(){
 
 	printf("Escriba el nombre del jugador (maximo 10 letras)\n");
 	scanf("%s",j1.apodo);
+	printf("\n");
 
 
     fprintf(f2,"%s",j1.apodo);
