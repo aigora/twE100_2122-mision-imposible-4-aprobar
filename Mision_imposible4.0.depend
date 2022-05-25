@@ -40,28 +40,17 @@
 	<time.h>
 	<stdlib.h>
 
-1651248935 source:c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\juegos.c
-	<stdio.h>
-	<string.h>
-	<time.h>
-	<stdlib.h>
+1653211575 source:c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\juegos.c
 	<stdio.h>
 	<string.h>
 	<time.h>
 	<stdlib.h>
 
-1651248935 source:c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\menu_principal.c
+1653208487 source:c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\menu_principal.c
 	<stdio.h>
-	"juegos.h"
-	<stdio.h>
-	<locale.h>
 	"juegos.h"
 
-1651248935 c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\juegos.h
-	<string.h>
-	<stdio.h>
-	<time.h>
-	<stdlib.h>
+1652878399 c:\users\jesup\onedrive\desktop\informatica\github trabajo\trabajo github\juegos.h
 	<string.h>
 	<stdio.h>
 	<time.h>
