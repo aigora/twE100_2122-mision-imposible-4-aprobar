@@ -357,6 +357,7 @@ void tres_en_raya(int *p_puntuacion, int *p_hab)
                                 '7', '8', '9'};
     char eleccion__jugador, *p;
     p = matriz_tablero;
+    printf("Tu juegas con 'x'.\n");
     do
     {
             turno_maquina(p);
@@ -485,7 +486,7 @@ void adivina_pais(int *p_puntuacion, int *p_hab)
         fclose(pf);
     }
 
-    printf("Adivina este pais:\n");
+    printf("Adivina el pais: (en minuscula y sin acentos) \n");
     i = 1;
     do
     {
@@ -519,19 +520,16 @@ void adivina_pais(int *p_puntuacion, int *p_hab)
 /// juego aleatorio ///
 
 void juegoaleatorio (int *p_puntuacion, int *p_hab){
-int n = rand() % 4 + 1;
+int n = rand() % 3 + 1;
 switch (n)
     {
     case 1:
-        ahorcado(p_puntuacion,p_hab);
-        break;
-    case 2:
         ahorcado (p_puntuacion,p_hab);
         break;
-    case 3:
+    case 2:
         tres_en_raya (p_puntuacion,p_hab);
         break;
-    case 4:
+    case 3:
         adivina_pais(p_puntuacion, p_hab);
         break;
     default:

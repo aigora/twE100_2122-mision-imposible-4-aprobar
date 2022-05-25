@@ -59,7 +59,7 @@ int main(){
 	do
     {
         printf("--MENU PRINCIPAL--\n\n");
-        printf("1) Modo dificil.\n2) Modo facil\n3) Salir del programa.\n4) Puntuacion.\n5) Aarcade.\n");
+        printf("1) Modo dificil.\n2) Modo facil\n3) Salir del programa.\n4) Puntuacion.\n5) Arcade.\n");
         scanf("%i", &eleccionmenu);
         switch(eleccionmenu)
         {
