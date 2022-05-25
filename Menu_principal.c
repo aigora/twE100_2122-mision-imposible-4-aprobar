@@ -80,10 +80,10 @@ int main(){
             case 4:
                 printf("La puntuacion del jugador %s es: %i\n\n",j1.apodo,j1.puntuacion);
                 break;
-            default:
             case 5:
                 j1.puntuacion += nivel_arcade();
-
+                break;
+            default:
                 break;
 
         }
