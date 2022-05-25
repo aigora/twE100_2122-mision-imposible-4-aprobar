@@ -35,7 +35,6 @@ void ahorcado(int *p_puntuacion, int *p_hab)
     }
     fseek(p_f, 0, SEEK_SET);
     random = rand() % n_lineas;
-    printf("\nnumero de lineas:%i\n", n_lineas);
 
 
 i = 0;
@@ -446,10 +445,81 @@ int empate(char *p_matriz)
 }
 ///FIN DEL TRES EN RAYA///
 
+typedef struct
+{
+    char c[400];
+} pais_secreto;
+
+void adivina_pais(int *p_puntuacion, int *p_hab)
+{
+    int i, j;
+    pais_secreto p[6];
+    FILE *pf;
+    int n;
+    int n_lineas = 0;
+    char c;
+    char jugador[100];
+
+    pf = fopen("paises.txt", "r");
+    if (pf == NULL)
+    {
+        printf("Error al abrir el fichero.\n");
+        return -1;
+    }
+    else
+    {
+        while (fscanf(pf, "%c", &c) != EOF)
+        {
+            if (c == '\n')
+                n_lineas++;
+        }
+        fseek(pf, 0,SEEK_SET);
+        n = rand() % n_lineas + 1;
+        i = 1;
+        while (fscanf(pf, "%[^;];%[^;];%[^;];%[^;];%[^;];%[^;];\n", p[0].c, p[1].c, p[2].c, p[3].c, p[4].c, p[5].c) != EOF)
+        {
+            if (n == i)
+                break;
+            i++;
+        }
+        fclose(pf);
+    }
+
+    printf("Adivina este pais:\n");
+    i = 1;
+    do
+    {
+        printf("Pista %i:\n", i);
+        j = 0;
+        while (p[i].c[j] != '\0')
+        {
+            printf("%c", p[i].c[j]);
+            j++;
+        }
+        printf("\n");
+        scanf(" %99[^\n]", jugador);
+        i++;
+    } while (i < 6 && strcmp(jugador, p[0].c) != 0);
+
+    if (strcmp(jugador, p[0].c) != 0)
+    {
+        printf("Has perdido.\n");
+        *p_puntuacion -=3;
+
+    } else if(strcmp(jugador, p[0].c) == 0)
+    {
+        printf("Has superado la prueba. Has adivinado el pais.\n");
+        *p_puntuacion +=3;
+        *p_hab +=1;
+    }
+    printf("\n\n");
+}
+
+
 /// juego aleatorio ///
 
 void juegoaleatorio (int *p_puntuacion, int *p_hab){
-int n = rand () % 3 + 1;
+int n = rand() % 4 + 1;
 switch (n)
     {
     case 1:
@@ -460,6 +530,9 @@ switch (n)
         break;
     case 3:
         tres_en_raya (p_puntuacion,p_hab);
+        break;
+    case 4:
+        adivina_pais(p_puntuacion, p_hab);
         break;
     default:
         break;

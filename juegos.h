@@ -8,7 +8,7 @@ int nivel_dificil();
 int nivel_facil();
 
 
-void wordle(int *p_puntuacion, int *p_hab);
+void adivina_pais(int *p_puntuacion, int *p_hab);
 void ahorcado(int *p_puntuacion, int *p_hab);
 void tres_en_raya(int *p_puntuacion, int *p_hab);
 void buscarcajas (int *p_puntuacion, int *p_hab);

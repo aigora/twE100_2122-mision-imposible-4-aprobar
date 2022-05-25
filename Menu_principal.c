@@ -167,7 +167,7 @@ int nivel_facil()
             }
         }
     }
-    while(hab < 4);
+    while(hab < 5);
 
 
     return puntuacionfacil;
