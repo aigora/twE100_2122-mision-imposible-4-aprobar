@@ -1,4 +1,4 @@
-argentina;Posee el rio mas ancho del mundo;Esta en Hispanoamérica;Esta la avenida mas ancha del mundo;Esta el pico mas alto de america;Su capital es buenos aires;
+argentina;Posee el rio mas ancho del mundo;Esta en Hispanoamerica;Esta la avenida mas ancha del mundo;Esta el pico mas alto de america;Su capital es buenos aires;
 china;El 20%de la poblacion mundial es de este pais;Su red ferroviaria daria dos vueltas al mundo;Posee el ejercito más numeroso del mundo;Todos los osos panda pertenecen a este pais;Su capital es Pekin;
 uzbequistan;Formo parte de la URSS;Su moneda es el Som;Su plato nacional es el Plov;El algodon es la segunda fuente de ingresos del pais;Su capital es Taskent;
 canada;Es el segundo pais mas grande del mundo;Es el país del mundo con mas km de costa;Sus habitantes están obsesionados con el sirope de arce;El famoso cantante Justin Bieber es de este pais;Su capital es Otawa;
@@ -6,8 +6,8 @@ nueva zelanda;Fue el primer pais en tener sufragio femenino;El 30% del pais es u
 pakistan;Su cordillera es el lugar con mayor concentración de montañas del mundo;Tiene dos premio nobel;Osama Bin Laden murio alli;Alli se producen el 40% de los balones del mundo;Su capital es Islamabad;
 alemania;Tiene mas de 5000 tipos de cerveza;Algunas de sus carreteras no tienen límites de velocidad;Beber alcohol en publico es legal;Es el pais de origen del refresco Fanta;su capital es Berlin;
 nigeria;Es el pais mas poblado de africa;Su idioma oficial es el ingles;Posee la mayor cantidad de diversidad de mariposas;Tiene la tasa de natalidad mas alta de gemelos;Su capital es Abuya;
-japon;Es el pais con la estación de tren mas concurrida del planeta;Tienen una estatua a un perro;Tiene 108 volcanes activos;No se puede fumar en la calle;Su capital es Tokio;
-francia;Este país tiene mas de 40,000 casillos;Fue el lugar de nacimiento del transporte publico;Se comen mas de 30.000 toneladas de caracoles al año;La primera pelicula se grabo alli;Su capital es Paris;
+japon;Es el pais con la estacion de tren mas concurrida del planeta;Tienen una estatua a un perro;Tiene 108 volcanes activos;No se puede fumar en la calle;Su capital es Tokio;
+francia;Este pais tiene mas de 40,000 casillos;Fue el lugar de nacimiento del transporte publico;Se comen mas de 30.000 toneladas de caracoles al año;La primera pelicula se grabo alli;Su capital es Paris;
 ecuador;Tienen un parque nacional que alberga el 10% de las especies del planeta;Tiene la capital mas alta del mundo;Tiene la unica estatua de una virgen con alas de angel;Tiene el punto mas cercano al sol;Su capital es Quito;
 india;Es la democracia mas numerosa del mundo;El ajedrez tiene su origen en este pais;Es el lugar de nacimiento de 4 religiones importantes;El deporte mas popular es el cricket;Su capital es Nueva Delhi;
 tailandia;es el mayor exportador de orquideas;esta la estatua de oro de buda mas grande del mundo;tiene el mayor mercado de Asia;se conduce por la izquierda;su capital es Bangkok;
