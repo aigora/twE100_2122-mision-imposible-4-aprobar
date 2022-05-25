@@ -6,7 +6,7 @@
 
 int nivel_dificil();
 int nivel_facil();
-
+int nivel_arcade();
 
 void adivina_pais(int *p_puntuacion, int *p_hab);
 void ahorcado(int *p_puntuacion, int *p_hab);
